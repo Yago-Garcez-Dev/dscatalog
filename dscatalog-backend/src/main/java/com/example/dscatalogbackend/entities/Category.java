@@ -2,6 +2,7 @@ package com.example.dscatalogbackend.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
@@ -9,6 +10,7 @@ import java.util.Objects;
 @Entity
 @Table(name="tb_category")
 public class Category implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -20,9 +22,7 @@ public class Category implements Serializable {
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant updatedAt;
 
-    public Category(){
-
-    }
+    public Category(){}
 
     public Category(Long id, String name) {
         this.id = id;
