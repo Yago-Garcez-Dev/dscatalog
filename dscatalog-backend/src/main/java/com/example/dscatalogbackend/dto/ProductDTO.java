@@ -2,7 +2,6 @@ package com.example.dscatalogbackend.dto;
 
 import com.example.dscatalogbackend.entities.Category;
 import com.example.dscatalogbackend.entities.Product;
-import jakarta.persistence.Column;
 
 import java.io.Serializable;
 import java.time.Instant;
